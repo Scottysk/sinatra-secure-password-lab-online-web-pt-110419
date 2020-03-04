@@ -43,7 +43,7 @@ class ApplicationController < Sinatra::Base
     user = User.find(session[:user_id])
     
     if user && user.authentication(params[:password])
-      session[:user_id]
+      session[:user_id] = user.id
   end
 
   get "/failure" do
