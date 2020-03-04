@@ -40,7 +40,8 @@ class ApplicationController < Sinatra::Base
   end
 
   post "/login" do
-    user
+    user = User.find(session[:user_id])
+    
   end
 
   get "/failure" do
