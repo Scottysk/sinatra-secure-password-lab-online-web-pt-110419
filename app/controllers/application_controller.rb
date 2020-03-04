@@ -31,6 +31,7 @@ class ApplicationController < Sinatra::Base
       erb :account
     else
       redirect to "/login"
+    end
   end
 
 
