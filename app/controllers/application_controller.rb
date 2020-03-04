@@ -40,7 +40,7 @@ class ApplicationController < Sinatra::Base
   end
 
   post "/login" do
-    ##your code here
+    user
   end
 
   get "/failure" do
